@@ -1,0 +1,154 @@
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: rgba(7, 4, 4, 0.7) ;
+    
+    justify-content: space-between;
+    padding: 1rem; 
+    z-index: 1;
+
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+
+#navbar ul li a{
+    color: #ffffff;
+    margin: 0 0.25rem;
+    padding: 0.75rem ;
+
+
+}
+button{
+    background:none;
+}
+#navbar ul li a:hover{
+    background-color: #000000;
+    border-radius: 10px ;
+}
+* {
+
+    margin: 1;
+    padding: 1;
+
+}
+
+.search {
+
+    margin-left: 5px;
+    margin-top: 5px;
+    border: 0.1px solid gray;
+    border-radius: 20px;
+    width:max-content;
+    overflow: hidden;
+
+}
+
+.login-btn{
+    margin-bottom: 10px;
+    color: white;
+    background:rgb(0, 102, 255);
+    border-radius: 5px;
+    padding:0 30px 0 30px;
+    margin-top: 20px;
+    margin-left:85px;
+    cursor: pointer;
+    box-shadow: 1px 2px rgb(0, 35, 110);
+    border:none;
+    height: 30px;
+}
+.login-btn:hover{
+    background-color: rgba(0, 102, 255,0.5);
+}
+button i {
+
+    height: 20px;
+    width: 25px;
+    color: rgb(68, 15, 15);
+    margin-right: 7px ;
+
+}
+
+input{
+    padding-left: 10px;
+    height : 35px;
+    margin-left: 5px;
+    border: none;
+    width: 0px;
+    transition: width 0.5s;
+    width:258px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+input:invalid{
+    border:1px solid red;
+}
+.search:hover > input{
+
+    width: 200px ;
+
+}
+
+form{
+    padding:20px;
+    padding-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 310px;
+    height: 380px;
+    background: #171717;
+    border-radius: 15px;
+    box-sizing: border-box
+}
+h2{
+    margin-left: 60px;
+    color: white;
+    margin-bottom: 8px;
+}
+label{
+    color:white;
+}
+body{
+    left: 50%;
+    background: url(login.jpg) no-repeat center center/cover;
+    border-radius: 15px;
+    font-family: 'Lato','Bitter', serif;
+}
+.dropbtn{
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
